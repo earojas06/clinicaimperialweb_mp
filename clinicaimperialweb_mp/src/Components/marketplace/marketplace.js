@@ -2,6 +2,7 @@ import React ,{ useState,useEffect,useCallback } from 'react'
 import 'swiper'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import { client } from '../../client'
+import Marketplacehome from './marketplacehome'
 
 const Marketplace  = () => {  
     const [isMarketplaceLoading,setIsMarketplaceLoading]= useState(false)
@@ -60,11 +61,12 @@ const Marketplace  = () => {
                 const {id,producto1,valor1} = item
                     return(
                         <div>
-                              <img src={ producto1 }/>
-                                <p> {valor1} </p>
-
+                             {/* <img src={ producto1 }/>
+                                <p> {valor1} </p> */}
+                                <Marketplacehome/>
                         </div>
-                      
+
+                    
                     )
                 })}
 
@@ -77,3 +79,40 @@ const Marketplace  = () => {
   }
 
   export default Marketplace
+
+
+
+  /*const marketPlaceData = [
+    {
+      image: marketplace1,
+      name: "Aiboi-meta",
+    },
+    {
+      image: marketplace2,
+      name: "Pedram-mohamm...",
+    },
+    {
+      image: marketplace3,
+      name: "Eduardo-pena",
+    },
+    {
+      image: marketplace4,
+      name: "Daeho-cha",
+    },
+    {
+      image: marketplace5,
+      name: "Justine-florentino",
+    },
+    {
+      image: marketplace6,
+      name: "Hoang-l-p-solan",
+    },
+    {
+      image: marketplace7,
+      name: "Joshua-jay",
+    },
+    {
+      image: marketplace8,
+      name: "Joshua-jay",
+    },
+  ];*/
