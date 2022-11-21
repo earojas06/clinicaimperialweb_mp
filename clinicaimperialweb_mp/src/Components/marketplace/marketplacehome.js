@@ -1,83 +1,166 @@
 import React from "react";
 import '../../index.css'
-import styled from "styled-components";
+//import styled from "styled-components";
 
 
 
-const Marketplacehome= (props) =>{
-  const {id,producto1,valor1,producto2,valor2,producto3,valor3}=props
+export const Marketplacehome = (props) => {
+  const { id, producto1, valor1, producto2, valor2, producto3, valor3 } = props
 
   const marketPlaceData = [
     {
-      image: {producto1},
-      name: {valor1},
+      image: { producto1 },
+      name: { valor1 },
     },
     {
-      image: {producto2},
-      name: {valor2},
+      image: { producto2 },
+      name: { valor2 },
     },
     {
-      image: {producto3},
-      name: {valor3},
+      image: { producto3 },
+      name: { valor3 },
     }
   ];
 
 
 
-    return(
-        <Section>
-      <div className="title">
-        <h2>Marketplace</h2>
-        <p>
-          <img src={producto1}  />
-         
-        Valor: {valor1}
-        </p>
+  return (
+    <>
+      <h1 className="title">PRODUCTOS</h1>
+      <div className="productos">
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+        <div className="producto">
+            <a href="#">
+              <div className="producto__img">
+                <img src={producto1} alt="" />
+              </div>
+            </a>
+            <div className="producto__footer">
+              <h1> Title</h1>
+              <p>categoria</p>
+              <p className="price">{valor1}</p>
+            </div>
+            <div className="buttom">
+              <button className="btn">
+                Añadir al carrito
+              </button>
+              <div>
+                <a href="#" className="btn">vista</a>
+              </div>
+
+            </div>
+        </div>
+
       </div>
-      
 
-     {/* <div className="marketPlaces">
-        {marketPlaceData.map(({ image, name }) => {
-          return (
-            <div className="marketplace">
-              <div className="image">
-                <img src={image} alt="marketplace" />
-              </div>
-              <div className="name">
-                <h4>{name}</h4>
-                {/*<BsThreeDots />
-              </div>
+    </>
+  );
 
-              </div>  
-          );
-        })}
-      </div> */}
-    </Section>
-
-    );
-   
 }
 export default Marketplacehome
 
 
-const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  margin: 0 6rem;
-  margin-bottom: 5rem;
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    flex-direction: column;
-    h2 {
-      font-size: 3rem;
-    }
-    p {
-      color: #7b7e86;
-    }
-  }
-
-  `;
