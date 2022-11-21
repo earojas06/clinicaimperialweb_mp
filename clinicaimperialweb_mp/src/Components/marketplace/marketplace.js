@@ -4,6 +4,7 @@ import {Swiper,SwiperSlide} from 'swiper/react'
 import { client } from '../../client'
 import Marketplacehome from './marketplacehome'
 import{ Header } from "./marketplaceheader";
+import { Carrito } from './carrito'
 
 const Marketplace  = () => {  
     const [isMarketplaceLoading,setIsMarketplaceLoading]= useState(false)
@@ -70,10 +71,11 @@ const Marketplace  = () => {
                         <div>
                             <Header key ={id} logo={logo} />
                              {/* <img src={ producto1 }/>
-                                <p> {valor1} </p> 
+                                <p> {valor1} </p> */}
+                              <Carrito/>
                                 <Marketplacehome key ={id} producto1 = {producto1} valor1 ={valor1}
                                 producto2 = {producto2} valor2 ={valor2} producto3 = {producto3} valor3 ={valor3}/>
-                                  */}
+                                  
                                 </div>
 
                     
@@ -86,40 +88,3 @@ const Marketplace  = () => {
   }
 
   export default Marketplace
-
-
-
-  /*const marketPlaceData = [
-    {
-      image: marketplace1,
-      name: "Aiboi-meta",
-    },
-    {
-      image: marketplace2,
-      name: "Pedram-mohamm...",
-    },
-    {
-      image: marketplace3,
-      name: "Eduardo-pena",
-    },
-    {
-      image: marketplace4,
-      name: "Daeho-cha",
-    },
-    {
-      image: marketplace5,
-      name: "Justine-florentino",
-    },
-    {
-      image: marketplace6,
-      name: "Hoang-l-p-solan",
-    },
-    {
-      image: marketplace7,
-      name: "Joshua-jay",
-    },
-    {
-      image: marketplace8,
-      name: "Joshua-jay",
-    },
-  ];*/
