@@ -1,19 +1,42 @@
 import React from "react";
 import '../../index.css'
 import styled from "styled-components";
-export default function Marketplacehome (){
+
+
+
+const Marketplacehome= (props) =>{
+  const {id,producto1,valor1,producto2,valor2,producto3,valor3}=props
+
+  const marketPlaceData = [
+    {
+      image: {producto1},
+      name: {valor1},
+    },
+    {
+      image: {producto2},
+      name: {valor2},
+    },
+    {
+      image: {producto3},
+      name: {valor3},
+    }
+  ];
+
+
 
     return(
         <Section>
       <div className="title">
-        <h2>NFT Marketplace</h2>
+        <h2>Marketplace</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard.
+          <img src={producto1}  />
+         
+        Valor: {valor1}
         </p>
       </div>
-      {/**
-      <div className="marketPlaces">
+      
+
+     {/* <div className="marketPlaces">
         {marketPlaceData.map(({ image, name }) => {
           return (
             <div className="marketplace">
@@ -22,14 +45,10 @@ export default function Marketplacehome (){
               </div>
               <div className="name">
                 <h4>{name}</h4>
-                <BsThreeDots />
+                {/*<BsThreeDots />
               </div>
-              <h6 className="username">@koolkishansheth</h6>
-              <div className="price-container">
-                <h5 className="price">5.5ETH</h5>
-                <FaEthereum />
-              </div>
-            </div>
+
+              </div>  
           );
         })}
       </div> */}
@@ -38,6 +57,8 @@ export default function Marketplacehome (){
     );
    
 }
+export default Marketplacehome
+
 
 const Section = styled.section`
   display: flex;
