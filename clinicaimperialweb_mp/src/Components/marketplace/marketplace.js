@@ -70,8 +70,6 @@ const Marketplace  = () => {
                         
                         <div>
                             <Header key ={id} logo={logo} />
-                             {/* <img src={ producto1 }/>
-                                <p> {valor1} </p> */}
                               <Carrito/>
                                 <Marketplacehome key ={id} producto1 = {producto1} valor1 ={valor1}
                                 producto2 = {producto2} valor2 ={valor2} producto3 = {producto3} valor3 ={valor3}/>

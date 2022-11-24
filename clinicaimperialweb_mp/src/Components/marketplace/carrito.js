@@ -12,9 +12,6 @@ export const Carrito = () => {
              <div className="carrito__center"></div>
              
         </div>
-
-
-
     </div>
   )
 }
